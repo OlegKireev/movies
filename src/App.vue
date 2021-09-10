@@ -15,13 +15,21 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
-  @import './../node_modules/normalize-css/normalize.css';
+@import './../node_modules/normalize-css/normalize.css';
 
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+.container {
+  max-width: 1060px;
+  padding: 0 1.6rem;
+  margin: 0 auto;
+}
+
+a,
+a:hover,
+a:active {
+  color: #fefefe;
+}
+
+a {
+  text-decoration: none;
 }
 </style>
