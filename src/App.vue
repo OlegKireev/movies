@@ -25,8 +25,10 @@ export default {
 
 a,
 a:hover,
-a:active {
+a:active,
+a:focus {
   color: #fefefe;
+  outline: none;
 }
 
 a {
