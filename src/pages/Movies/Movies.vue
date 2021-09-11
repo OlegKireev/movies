@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import { searchMoviesAPI } from '../../api/searchMovies';
+import { moviesAPI } from '../../api/movies';
 import Finder from './Finder/Finder';
 import MoviesList from './MoviesList/MoviesList';
 
@@ -23,7 +23,7 @@ export default {
   },
   methods: {
     searchMovie(title) {
-      searchMoviesAPI.getMovieByTitle(title).then((data) => {
+      moviesAPI.getMoviesByTitle(title).then((data) => {
         this.movies = data;
       });
     },
