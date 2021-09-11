@@ -1,0 +1,30 @@
+input {
+  width: 100%;
+  border-radius: 0.2em;
+  padding: 0.5em 0.75em;
+  border: 1px solid #233232;
+}
+
+a,
+a:hover,
+a:active,
+a:focus {
+  color: #fefefe;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: 1px solid #233232;
+  border-radius: 0.2em;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1060px;
+  padding: 0 1.6rem;
+  margin: 0 auto;
+}

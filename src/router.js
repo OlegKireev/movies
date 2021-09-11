@@ -1,9 +1,9 @@
 import VueRouter from 'vue-router';
 
-import Homepage from './pages/Home';
-import Aboutpage from './pages/About';
-import Moviespage from './pages/Movies';
-import NotFoundPage from './pages/NotFound';
+import Homepage from './pages/Home/Home';
+import Aboutpage from './pages/About/About';
+import Moviespage from './pages/Movies/Movies';
+import NotFoundPage from './pages/NotFound/NotFound';
 
 const routes = [
   {
