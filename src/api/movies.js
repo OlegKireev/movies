@@ -6,8 +6,7 @@ export const moviesAPI = {
     return response.data;
   },
   async getMovieById(id) {
-    const response = await axios.get(`
-    /movie/${id}`);
+    const response = await axios.get(`/movie/${id}`);
     return response.data;
   },
 };

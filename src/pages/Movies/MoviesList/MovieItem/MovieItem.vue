@@ -1,6 +1,6 @@
 <template>
   <li>
-    <img :src="posterSrc" :alt="movie.title" />
+    <router-link :to="href"><img :src="posterSrc" :alt="movie.title"/></router-link>
     <h3>{{ movie.title }}</h3>
     <span class="original-title">{{ movie.original_title }}</span>
     <footer>
@@ -15,6 +15,9 @@ export default {
     movie: Object,
   },
   computed: {
+    href() {
+      return `movie/${this.$props.movie.id}`;
+    },
     posterSrc() {
       return `https://www.themoviedb.org/t/p/w220_and_h330_face/${this.$props.movie.poster_path}`;
     },
@@ -57,8 +60,18 @@ li {
   display: flex;
   flex-direction: column;
 
+  & a {
+    &:hover,
+    &:focus {
+      & img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
   & img {
     margin-bottom: 1rem;
+    transition: all 0.15s ease;
   }
 
   & h3 {
