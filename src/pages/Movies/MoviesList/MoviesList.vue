@@ -18,3 +18,14 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+</style>
