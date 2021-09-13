@@ -19,7 +19,10 @@ export default {
       return `movie/${this.$props.movie.id}`;
     },
     posterSrc() {
-      return `https://www.themoviedb.org/t/p/w220_and_h330_face/${this.$props.movie.poster_path}`;
+      let src = this.$props.movie.poster_path;
+      if (!src) return `${process.env.BASE_URL}img/without-image.svg`;
+
+      return `https://www.themoviedb.org/t/p/w220_and_h330_face/${src}`;
     },
     relaseDate() {
       return new Date(this.$props.movie.release_date).toLocaleString('ru-RU', {
